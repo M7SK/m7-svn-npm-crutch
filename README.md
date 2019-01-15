@@ -1,4 +1,4 @@
-# svn-npm-crutch
+# m7-svn-npm-crutch
 
 > Allow node modules to be installed from svn repos.
 
@@ -15,19 +15,19 @@ file.
 
 Installing this module via `npm install` will add an install hook to your
 project's package.json. Once this hook is added any time your run `npm install`
-for your project svn-npm-crutch looks through your package.json file for an
+for your project m7-svn-npm-crutch looks through your package.json file for an
 `svnDependencies` block where you can list your subversion stored node modules.
 
 ## Getting Started
-Install with `npm install --save svn-npm-crutch`
+Install with `npm install --save m7-svn-npm-crutch`
 
 ```javascript
 "dependencies": {
-  "svn-npm-crutch": "^0.5.4"
+  "m7-svn-npm-crutch": "^0.5.4"
 }
 ```
 
-After installing svn-npm-crutch you may use list dependencies from subversion
+After installing m7-svn-npm-crutch you may use list dependencies from subversion
 repositories in your `package.json` under a "svnDependencies" key. e.g.
 
 ```javascript
@@ -38,7 +38,7 @@ repositories in your `package.json` under a "svnDependencies" key. e.g.
 
 ## Documentation
 When uninstalling this module make sure the install hook has been removed. This
-should happend automatically when you `npm uninstall svn-npm-crutch` and only be
+should happend automatically when you `npm uninstall m7-svn-npm-crutch` and only be
 necessary if you manually uninstall the module by deleting the files and removing
 entries from your package.json.
 

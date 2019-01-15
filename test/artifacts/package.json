@@ -9,14 +9,14 @@
 	"licenses": [
 		{
 			"type": "MIT",
-			"url": "https://code.google.com/p/svn-npm-crutch-test/blob/master/LICENSE-MIT"
+			"url": "https://code.google.com/p/m7-svn-npm-crutch-test/blob/master/LICENSE-MIT"
 		}
 	],
 	"engines": {
 		"node": ">= 0.6.0"
 	},
 	"svnDependencies": {
-		"svn-npm-crutch-test": "http://svn-npm-crutch-test.googlecode.com/svn/trunk/"
+		"m7-svn-npm-crutch-test": "http://m7-svn-npm-crutch-test.googlecode.com/svn/trunk/"
 	},
 	"keywords": []
 }

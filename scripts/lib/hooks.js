@@ -18,9 +18,9 @@ module.exports = function (hook) {
 
 		pkg.scripts.install.split('&&').forEach(function (scrp) {
 			// -----------------------------------------------------
-			// Clear out any older install scripts for svn-npm-crutch
+			// Clear out any older install scripts for m7-svn-npm-crutch
 			// -----------------------------------------------------
-			if (-1 === scrp.indexOf('node_modules/svn-npm-crutch')) {
+			if (-1 === scrp.indexOf('node_modules/m7-svn-npm-crutch')) {
 				scrp = scrp.trim();
 				if (scrp.length > 0) {
 					installScripts.push(scrp);
@@ -29,14 +29,14 @@ module.exports = function (hook) {
 		});
 
 		if ('install' === hook) {
-			helperScript = 'node ./node_modules/svn-npm-crutch/lib/svn-npm-crutch.js';
+			helperScript = 'node ./node_modules/m7-svn-npm-crutch/lib/m7-svn-npm-crutch.js';
 			installScripts.push(helperScript);
 		}
 
 		pkg.scripts.install = installScripts.join(' && ');
 		fs.writeFileSync(appPkg, JSON.stringify(pkg, null, '  '));
 	} else {
-		console.log('svn-npm-crutch did not find your app\'s package.json file. You can safely ignore this message if you\'re install svn-npm-crutch itself.');
+		console.log('m7-svn-npm-crutch did not find your app\'s package.json file. You can safely ignore this message if you\'re install m7-svn-npm-crutch itself.');
 	}
 };
 

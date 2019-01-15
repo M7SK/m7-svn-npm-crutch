@@ -69,12 +69,12 @@ module.exports = {
 			'Should have a node_modules folder');
 
 		test.ok(
-			fs.existsSync(__dirname + '/tmp/node_modules/svn-npm-crutch-test'),
-			'Should have a svn-npm-crutch-test module (from subversion)');
+			fs.existsSync(__dirname + '/tmp/node_modules/m7-svn-npm-crutch-test'),
+			'Should have a m7-svn-npm-crutch-test module (from subversion)');
 
 		var svnNpmCrutchTestResult = false;
 		try {
-			svnNpmCrutchTestResult = require('./tmp/node_modules/svn-npm-crutch-test').test();
+			svnNpmCrutchTestResult = require('./tmp/node_modules/m7-svn-npm-crutch-test').test();
 		} catch (e) {
 			// Don't die
 		}
