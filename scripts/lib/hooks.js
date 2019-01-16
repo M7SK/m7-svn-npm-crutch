@@ -34,7 +34,7 @@ module.exports = function (hook) {
 		}
 
 		pkg.scripts.install = installScripts.join(' && ');
-		fs.writeFileSync(appPkg, JSON.stringify(pkg, null, '  '));
+		fs.writeFileSync(appPkg, JSON.stringify(pkg, null, '\t'));
 	} else {
 		console.log('m7-svn-npm-crutch did not find your app\'s package.json file. You can safely ignore this message if you\'re install m7-svn-npm-crutch itself.');
 	}
